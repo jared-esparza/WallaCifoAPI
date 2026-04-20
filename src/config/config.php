@@ -198,6 +198,9 @@ define('UPLOAD_FOLDER', '../storage');
 // tamaño máximo para los ficheros subidos en bytes (0 sin límite)
 define('UPLOAD_MAX_SIZE', 0);
 
+define('ANUNCIO_IMAGE_FOLDER', '/images/anuncio');
+define('DEFAULT_ANUNCIO_IMAGE', 'default_image.png');
+
 
 /* -------------------------------------------------------------
  * HERRAMIENTAS DE DEPURACIÓN
