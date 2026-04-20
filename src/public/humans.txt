@@ -1,0 +1,13 @@
+/* TEAM */
+Developer: Robert Sallent
+Site: https://robertsallent.com                       
+Twitter: @robertsallent
+LinkedIn: https://www.linkedin.com/in/robert-sallent-l%C3%B3pez-4187a866/
+Location: Sabadell, Barcelona, Catalonia
+												                            
+/* FASTLIGHT API */            
+Last update: 2026-04-12 
+Language: Spanish                   
+Standards: PHP8.2, MySQL8.0       
+
+

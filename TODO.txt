@@ -1,0 +1,53 @@
+
+-------------------------------------------------------------------------------------------------------------
+LISTA DE TAREAS PENDIENTES - TODO LIST
+
+Lista de mecanismos y herramientas que se irán incorporando (o no) en próximas 
+versiones del framework FastLight.
+
+Autor: Robert Sallent
+Última revisión: 12/04/2026
+
+Los cambios marcados con un ? están en fase de evaluación, no es seguro
+que se implementen.
+
+-------------------------------------------------------------------------------------------------------------
+
+- CORE/HTTP
+	- (FL v3.x) Router que combine bien con el dispatcher actual (rutas por defecto).
+	- (FL v3.x) Nuevos middlewares: CSRF, trim, emptystringtonull.
+	
+- LIBRARIES
+	- Mejorar el método XML::encode() para que sea recursivo y testearlo a fondo. Probarlo con APIs.
+	- Implementar el método CSV::decode()
+
+- ORM
+	- Seguir trabajando en el Query builder.
+	- Actualizar la clase DB para que trabaje mediante sentencias preparadas sobre PDO
+
+- MODELO
+	- (FL v3.x) Trabajar con snake case en la BDD en lugar de lowercase
+	- (FL v2.x) Trabajar con sentencias preparadas, para mejorar la seguridad 
+	- (FL v2.x) Adaptar la clase Model al nuevo Query Builder y la clase DB haciendo uso de sentencias preparadas (WIP)
+		
+- TEST Y DOCUMENTACIÓN
+	- (En proceso): Mejorar la documentación online y sacar los test del proyecto.
+	- Crear una documentación web a partir de los docblocks con phpdocumentor.
+	
+- HELPERS
+	- ? helper json() que retorna una JsonResponse
+	- ? helper xml() que retorna una XmlResponse
+	- ? helper csv() que retorna una CsvResponse
+		
+- INTEGRACIÓN CON DOCKER
+	- Corregir los problemas con el servidor de correo postfix		
+		
+- API
+	- Implementar mecanismo de API Keys	
+	- Arreglar XmlResponse para que trabaje correctamente con XML::encode() (una vez que esté revisado)
+
+
+- MISCELANEA
+	- Mejorar el mecanismo de password hashing para hacerlo más seguro.
+
+            

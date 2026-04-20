@@ -1,0 +1,23 @@
+{
+	"type" : "project",
+	"license" : "GPL-3.0-or-later",
+	"name" : "robertsallent/fastlightapi",
+	"description" : "Framework for RESFUL API development",
+	"require" : {
+		"php" : ">=8.2"
+	},
+	"homepage" : "https://fastlight.org",
+	"authors" : [{
+			"name" : "Robert Sallent",
+			"email" : "robert@fastlight.org",
+			"homepage" : "https://robertsallent.com",
+			"role" : "Engineer in Computer Science, teacher and developer"
+		}
+	],
+	"keywords" : [
+		"framework",
+		"API RESTFUL",
+		"php",
+		"webapp"
+	]
+}
