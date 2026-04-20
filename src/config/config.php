@@ -1,22 +1,22 @@
 <?php
 
 /** config.php
- * 
+ *
  * Parámetros de configuración de la API.
- * 
+ *
  * Todas las directivas se encuentran documentadas en el mismo fichero config.php.
- * 
+ *
  * Última revisión: 24/03/26
  * @author Robert Sallent <robert@fastlight.org>
  * @since v0.1.0
  */
-   
+
 
 /* -------------------------------------------------------------
  * AUTOLOAD
  * -------------------------------------------------------------*/
 
-// listado de directorios (classmap) para que el el autoload busque clases (no PSR-4) 
+// listado de directorios (classmap) para que el el autoload busque clases (no PSR-4)
 // listado de directorios (mapa de clases) para que el el autoload busque las clases a cargar (no PSR-4)
 define('AUTOLOAD_DIRECTORIES',  [
     '../app/core',          // core
@@ -28,9 +28,9 @@ define('AUTOLOAD_DIRECTORIES',  [
     '../app/orm',           // FastLight ORM, mapeador objeto-relacional
     '../app/exceptions'     // excepciones
 ]);
- 
-    
-    
+
+
+
 /* -------------------------------------------------------------
  * APLICACIÓN
  * -------------------------------------------------------------*/
@@ -58,7 +58,7 @@ define('DB_HOST','mysql');          // Host (configuración para Docker)
 
 define('DB_USER','root'); // Usuario para identificarse con la BDD.
 define('DB_PASS','root'); // Password para identificarse con la BDD.
-define('DB_NAME','fastlight');      // Nombre de la base de datos.
+define('DB_NAME','wallacifo');      // Nombre de la base de datos.
 define('DB_PORT',  3306);           // Puerto.
 define('DB_CHARSET','utf8');        // Codificación de caracteres para la conexión.
 
@@ -113,7 +113,7 @@ define('DEFAULT_EMAIL_NAME', 'No-reply test');
 
 // versión de PHP necesaria para ejecutar el framework o aplicación
 // podría funcionar en versiones anteriores pero no se garantiza que lo haga
-define('MIN_PHP_VERSION', '8.2.0');  
+define('MIN_PHP_VERSION', '8.2.0');
 
 // comprobación de la versión de PHP del servidor
 // si está a true impide que se ejecute la aplicación en servidores con versiones
@@ -156,7 +156,7 @@ define('USER_ROLES', [
 define('LOGIN_FIELD', 'email');
 
 // si queremos usar otro campo que no sea email, phone o both, hay que indicarlo expresamente
-define('ALLOW_OTHER_LOGIN_FIELD', false); 
+define('ALLOW_OTHER_LOGIN_FIELD', false);
 
 define('LOG_LOGIN_ERRORS', false);                 // guardar errores de login en fichero de log.
 
@@ -171,13 +171,13 @@ define('DB_LOGIN_ERRORS', false);                  // guardar errores de login e
  * -------------------------------------------------------------*/
 
 // nombre de la sesión (y de la cookie de sesión)
-define('SESSION_NAME', 'FLAPISSESSID');   
+define('SESSION_NAME', 'FLAPISSESSID');
 
 // tiempo (en segundos) antes de marcar los datos de sesión como basura
-define('SESSION_TIME', 1440);           
+define('SESSION_TIME', 1440);
 
 // tiempo de expiración de la cookie de sesión (0 cuando se reinicie el navegador)
-define('SESSION_COOKIE_EXPIRE', 0); 
+define('SESSION_COOKIE_EXPIRE', 0);
 
 // la cookie de sesión solamente se enviará si la conexión es segura (HTTPS)
 // el valor "true" nos puede dar problemas en localhost si no usamos HTTPS
@@ -193,18 +193,18 @@ define('SESSION_COOKIE_HTTPONLY', true);
  * -------------------------------------------------------------*/
 
 // carpeta por defecto para la subida de ficheros
-define('UPLOAD_FOLDER', '../storage'); 
+define('UPLOAD_FOLDER', '../storage');
 
 // tamaño máximo para los ficheros subidos en bytes (0 sin límite)
-define('UPLOAD_MAX_SIZE', 0);          
+define('UPLOAD_MAX_SIZE', 0);
 
 
 /* -------------------------------------------------------------
- * HERRAMIENTAS DE DEPURACIÓN 
+ * HERRAMIENTAS DE DEPURACIÓN
  * -------------------------------------------------------------*/
-    
+
 define('DISPLAY_ERRORS', true); // Muestra errores en pantalla. En producción debe estar a false.
-define('DEBUG', true);          // Activa el modo debug. En producción debe estar a false.  
+define('DEBUG', true);          // Activa el modo debug. En producción debe estar a false.
 
 define('LOG_ERRORS', true);                        // guardar errores en fichero de log.
 define('ERROR_LOG_FILE', '../logs/error.log');     // ruta del fichero de log.
